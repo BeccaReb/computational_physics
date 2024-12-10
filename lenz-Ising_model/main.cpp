@@ -1,14 +1,15 @@
-#include "lattice.hpp"
-
 #include <vector>
 #include <iostream>
 #include <armadillo>
+using namespace arma;
 #include <numeric>
 #include <sstream>
 #include <string>
 #include <iomanip>
 #include <typeinfo>
 #include <cassert>
+
+#include "../lattice.hpp"
 
 // Markov Chain Monte Carlo
 void MCMC(arma::mat S, int L, int N_cycles_burn, int N_cycles, double& E, double& M, double T, std::string filename)
