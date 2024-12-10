@@ -9,7 +9,7 @@ using namespace arma;
 #include <typeinfo>
 #include <cassert>
 
-#include "../lattice.hpp"
+#include "../include/lattice.hpp"
 
 // Markov Chain Monte Carlo
 void MCMC(arma::mat S, int L, int N_cycles_burn, int N_cycles, double& E, double& M, double T, std::string filename)
